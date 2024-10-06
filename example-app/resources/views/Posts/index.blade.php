@@ -39,39 +39,19 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @foreach ($posts as $post)
                   <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">{{$post['id']}}</th>
+                    <td>{{$post['title']}}</td>
+                    <td>{{$post['posted_by']}}</td>
+                    <td>{{$post['created_at']}}</td> 
                     <td>
                         <button href="#" class="btn btn-info">View</button>
                         <button href="#" class="btn btn-primary">Edit</button>
                         <button href="#" class="btn btn-danger">Delete</button>
                     </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>
-                        <button href="#" class="btn btn-info">View</button>
-                        <button href="#" class="btn btn-primary">Edit</button>
-                        <button href="#" class="btn btn-danger">Delete</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>
-                        <button href="#" class="btn btn-info">View</button>
-                        <button href="#" class="btn btn-primary">Edit</button>
-                        <button href="#" class="btn btn-danger">Delete</button>
-                    </td>
-                  </tr>
+                  </tr> 
+                  @endforeach
                 </tbody>
               </table>
         </div>
