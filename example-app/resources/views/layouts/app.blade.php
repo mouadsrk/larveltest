@@ -24,26 +24,9 @@
           </div>
         </div>
       </nav>
-      <div class="card">
-        <div class="card-header">
-          Post info
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Title {{$post['title']}}</h5>
-          <p class="card-text">Description: {{$post['description']}}</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          Post Creator Info
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Name:ahmed</h5>
-          <p class="card-text">Email ahmed@gmail.com</p>
-          <p class="card-text">Created At:Thursday 25th of December 1975 02:15:16 PM</p>
-        </div>
-      </div>
-        </div>
+
+    
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
