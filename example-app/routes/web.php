@@ -21,7 +21,9 @@ Route::get('/' , function (){
 
  
 Route:: get ('/posts' , [PostController::class , "index" ])->name('posts.index') ;
-Route:: get ('/posts/{postbb}' , [PostController::class , 'show'])->name('post.show');
+Route::get('posts/create' , [PostController::class , 'create'])->name('posts.create');
+Route:: get ('/posts/{postid}' , [PostController::class , 'show'])->name('post.show');
+
 
 //1- define a new route so the user can access it through browser 
 //2- define  controller that renders a view 
