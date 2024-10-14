@@ -6,20 +6,18 @@
 @section('title') create  @endsection
 @section('content')
 
-<form>
-    <label>Title</label>
-    <input>
-    <label for="">Description</label>
-    <textarea type="text" name="" id=""> </textarea>
-
-    <label>Post Creator</label>
+<form method="POST" action={{route('post.store')}}>
+    @csrf
+    <label>Title</label><br>
+    <input><br>
+    <label for="">Description</label><br>
+    <textarea type="text" name="" id=""> </textarea><br>
+    <label>Post Creator</label><br>
     <select name="" id="">
-    </select>
-        <option> </option>
-        <option> </option>
-    </select>
-    <button>Submit</button>
-
+        <option value="1">Ahmed</option>
+        <option value ="2"> Mohamed</option>
+    </select><br>
+    <input  class="btn btn-success"  type="submit" value="Submit">
 @endsection
 
 </form>
