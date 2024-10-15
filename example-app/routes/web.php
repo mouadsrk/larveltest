@@ -23,11 +23,8 @@ Route::get('/' , function (){
 Route:: get ('/posts' , [PostController::class , "index" ])->name('posts.index') ;
 Route::get('posts/create' , [PostController::class , 'create'])->name('posts.create');
 Route:: get ('/posts/{postid}' , [PostController::class , 'show'])->name('post.show');
-Route:: post('/posts' , function ()
-{
-    return 'we are posting';
-}
-)->name('post.store');
+Route:: post('/posts' , [PostController::class, 'store'])->name('post.store');
+
 
 //1- define a new route so the user can access it through browser 
 //2- define  controller that renders a view 

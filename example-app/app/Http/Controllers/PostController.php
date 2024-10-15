@@ -25,4 +25,9 @@ class PostController extends Controller
     {
         return  view('Posts.create'); 
     }
+    public function store()
+    {
+        return 'hello in store';
+    }
+
 }
