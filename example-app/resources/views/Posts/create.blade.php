@@ -9,11 +9,11 @@
     <form method="POST" action={{route('post.store')}}>
         @csrf
         <label>Title</label><br>
-        <input><br>
+        <input name ='title' type='text' ><br>
         <label for="">Description</label><br>
-        <textarea type="text" name="" id=""> </textarea><br>
+        <textarea  name='description' type="text" name="" id=""> </textarea><br>
         <label>Post Creator</label><br>
-        <select name="" id="">
+        <select   name="post_creator" >
             <option value="1">Ahmed</option>
             <option value ="2"> Mohamed</option>
         </select><br>

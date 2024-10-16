@@ -27,7 +27,18 @@ class PostController extends Controller
     }
     public function store()
     {
-        return 'hello in store';
-    }
 
+        $data =  request()->all();
+        $title = request()->title;
+        $description  =request()->description;
+        $postCreator = request()->post_creator;
+        // dd($data->request);
+
+        dd($data , $title , $description , $postCreator);
+        return redirect()->route('posts.index');
+    }
 }
+
+// 1-get user data
+// 2- strore user data in database
+// 3- redirection to posts.index
