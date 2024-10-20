@@ -34,9 +34,25 @@ class PostController extends Controller
         $postCreator = request()->post_creator;
         // dd($data->request);
 
-        dd($data , $title , $description , $postCreator);
+       
         return redirect()->route('posts.index');
     }
+    public function edit()
+    {
+        return view("Posts.edit");
+    }
+    public function update()
+    {
+        $data =  request()->all();
+        $title = request()->title;
+        $description  =request()->description;
+        $postCreator = request()->post_creator;
+       
+
+
+        return redirect()->route('posts.show' , 1);
+    }
+
 }
 
 // 1-get user data
